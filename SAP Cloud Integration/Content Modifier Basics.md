@@ -59,10 +59,52 @@ Suppose that the incoming message has the following information:
 
 On the Message Header tab of the Content Modifier, enter the following to write constant values to the message header:
 
-Action   Name            Source Type   Source Value
-
-Create   vendor          constant      ABC Corp    
-Create   delivery date   constant      25062013
+<p dir="auto">On the <em>Message Header</em> tab of the Content Modifier, enter the following to write constant values to the message header:</p>
+<hr>
+<markdown-accessiblity-table><table>
+<tbody><tr>
+<th valign="top">
+<p dir="auto">Action</p>
+</th>
+<th valign="top">
+<p dir="auto">Name</p>
+</th>
+<th valign="top">
+<p dir="auto">Source Type</p>
+</th>
+<th valign="top">
+<p dir="auto">Source Value</p>
+</th>
+</tr>
+<tr>
+<td valign="top">
+<p dir="auto">Create</p>
+</td>
+<td valign="top">
+<p dir="auto">vendor</p>
+</td>
+<td valign="top">
+<p dir="auto">constant</p>
+</td>
+<td valign="top">
+<p dir="auto">ABC Corp</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p dir="auto">Create</p>
+</td>
+<td valign="top">
+<p dir="auto">delivery date</p>
+</td>
+<td valign="top">
+<p dir="auto">constant</p>
+</td>
+<td valign="top">
+<p dir="auto">25062013</p>
+</td>
+</tr>
+</tbody></table></markdown-accessiblity-table>
 
 On the Body tab, keep placeholders for the header information specified in the first Content Modifier step (${header.vendor} and ${header.date}) to modify the content as shown below. Additionally, use a placeholder ${in.body} for the incoming message.
 
