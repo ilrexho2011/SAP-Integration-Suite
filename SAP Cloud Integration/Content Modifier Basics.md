@@ -59,29 +59,10 @@ Suppose that the incoming message has the following information:
 
 On the Message Header tab of the Content Modifier, enter the following to write constant values to the message header:
 
-Action
+Action   Name            Source Type   Source Value
 
-Name
-
-Source Type
-
-Source Value
-
-Create
-
-vendor
-
-constant
-
-ABC Corp
-
-Create
-
-delivery date
-
-constant
-
-25062013
+Create   vendor          constant      ABC Corp    
+Create   delivery date   constant      25062013
 
 On the Body tab, keep placeholders for the header information specified in the first Content Modifier step (${header.vendor} and ${header.date}) to modify the content as shown below. Additionally, use a placeholder ${in.body} for the incoming message.
 
