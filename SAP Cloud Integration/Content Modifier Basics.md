@@ -50,12 +50,14 @@ The following example shows how to modify both the header and body data containe
 
 Suppose that the incoming message has the following information:
 
+<code>
 <order>
 	<book>
 		<BookID>A1000</BookID>
 		<Count>5</Count>
 	</book>
 </order>
+</code>
 
 On the Message Header tab of the Content Modifier, enter the following to write constant values to the message header:
 
