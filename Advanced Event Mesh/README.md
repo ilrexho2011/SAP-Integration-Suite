@@ -1,4 +1,5 @@
 Ereignisgesteuerte Integration mit SAP Advanced Event Mesh (AEM) und SAP Cloud-Integration
+
 In diesem Dokument wird der Prozess der asynchronen Integration zwischen verschiedenen Systemen über SAP Advanced Event Mesh (AEM) und SAP Cloud Integration (CPI) ausführlich beschrieben. Durch die ereignisgesteuerte Architektur erfolgt die Kommunikation in Echtzeit und ohne direkte Punkt-zu-Punkt-Verbindungen, wodurch Flexibilität, Konsistenz und unmittelbare Reaktion auf Änderungen in Geschäftsprozessen gewährleistet sind.
 1. Ereignisquelle (Publisher-System – ERP/CRM)
 Quellsystem (p.sh. B. SAP ERP, CRM) erzeugt immer dann ein Ereignis, wenn eine wichtige Geschäftsaktion eintritt. Wenn beispielsweise eine neue Bestellung erstellt wird, wird ein Ereignis mit dem Thema "retail/orders/created" veröffentlicht. Dieses Ereignis enthält die grundlegenden Bestellinformationen (ID, Kunde, Betrag, Datum usw.) und wird an AEM Broker gesendet.
