@@ -1,0 +1,16 @@
+# CPI iFlow Design Outlines
+
+## Project 1: Intelligent Error Classification
+[Timer] → [HTTP (OData) – Fetch Failed Logs] → [Groovy: Extract Fields] → 
+[HTTP (REST) – /classifyError] → [Router by confidence/category] → 
+[ProcessDirect: log_subflow(Start/Success/Error)] → [Mail Summary]
+
+## Project 2: Data Enrichment
+[REST Sender] → [JSON Schema Validator] → [HTTP – /enrichCustomer] → 
+[Groovy: Merge Enrichment] → [HTTP – Target (Snowflake or DB API)] → 
+[ProcessDirect: log_subflow] → [Response]
+
+## Project 3: Predictive Monitoring
+[Timer] → [HTTP (OData) – Metrics Pull] → [Groovy: Aggregate/Normalize] → 
+[HTTP – /predictFailures] → [Router by risk] → [Mail/Teams Alert] → 
+[ProcessDirect: log_subflow]

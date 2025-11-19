@@ -1,0 +1,6 @@
+{
+  "iFlowName": "PO_to_Ariba",
+  "failureRisk": "High",
+  "reason": "Rising p90 latency and error rate",
+  "recommendation": "Increase timeout to 30s; check downstream API SLA"
+}

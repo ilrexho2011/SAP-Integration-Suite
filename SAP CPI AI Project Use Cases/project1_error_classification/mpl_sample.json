@@ -1,0 +1,7 @@
+{
+  "messageId": "a1b2c3",
+  "iFlowName": "S4_to_Ariba_PO",
+  "adapterType": "REST",
+  "timestamp": "2025-10-20T10:31:00Z",
+  "errorText": "HTTP 401 Unauthorized at receiver channel REST_Receiver"
+}

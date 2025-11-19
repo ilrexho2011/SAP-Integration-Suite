@@ -1,0 +1,66 @@
+{
+  "info": {
+    "name": "CPI AI Project Pack",
+    "_postman_id": "cpi-ai-pack",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Classify Error",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{AI_BASE_URL}}/classifyError",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"errorText\": \"HTTP 401 Unauthorized\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Enrich Customer",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{AI_BASE_URL}}/enrichCustomer",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"customerName\": \"Apex Trading\",\n  \"address\": \"123 MG Road, Bangalore\",\n  \"description\": \"Supplier of industrial bolts and nuts\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Predict Failures",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{AI_BASE_URL}}/predictFailures",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"iFlowName\": \"PO_to_Ariba\"\n}"
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "AI_BASE_URL",
+      "value": "https://mock.local/ai"
+    }
+  ]
+}

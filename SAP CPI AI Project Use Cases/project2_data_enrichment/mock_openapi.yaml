@@ -1,0 +1,28 @@
+openapi: 3.0.0
+info:
+  title: Customer Enrichment Mock
+  version: 1.0.0
+paths:
+  /enrichCustomer:
+    post:
+      summary: Enrich customer record with AI
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                customerName: { type: string }
+                address: { type: string }
+                description: { type: string }
+      responses:
+        '200':
+          description: enrichment
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  industry: { type: string }
+                  addressClean: { type: string }
+                  confidence: { type: number, format: float }

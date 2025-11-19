@@ -1,0 +1,5 @@
+{
+  "errorCategory": "Authentication",
+  "confidence": 0.93,
+  "recommendedAction": "Renew access token and retry"
+}

@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Predictive Monitoring Mock
+  version: 1.0.0
+paths:
+  /predictFailures:
+    post:
+      summary: Predict integration failure risk
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                iFlowName: { type: string }
+      responses:
+        '200':
+          description: prediction
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  failureRisk: { type: string }
+                  reason: { type: string }
+                  recommendation: { type: string }

@@ -1,0 +1,9 @@
+{
+  "iFlowName": "PO_to_Ariba",
+  "windowStart": "2025-10-20T00:00:00Z",
+  "windowEnd": "2025-10-20T06:00:00Z",
+  "messageCount": 1240,
+  "errorCount": 73,
+  "avgDurationMs": 5800,
+  "p90DurationMs": 9100
+}

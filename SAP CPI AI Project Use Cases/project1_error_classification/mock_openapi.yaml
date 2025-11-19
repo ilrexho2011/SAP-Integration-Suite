@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Error Classifier Mock
+  version: 1.0.0
+paths:
+  /classifyError:
+    post:
+      summary: Classify CPI error
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                errorText:
+                  type: string
+      responses:
+        '200':
+          description: classification
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorCategory: { type: string }
+                  confidence: { type: number, format: float }
+                  recommendedAction: { type: string }
